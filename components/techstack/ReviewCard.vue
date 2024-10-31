@@ -1,25 +1,35 @@
 <template>
   <figure
-    class="relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+    class="relative w-72 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
   >
     <div class="flex flex-row items-center gap-2">
-      <NuxtImg :src="img" class="rounded-full" width="32" height="32" alt="" />
+      <NuxtImg
+        :src="institutionLogo"
+        class="rounded-full"
+        width="32"
+        height="32"
+        alt="Institution Logo"
+      />
       <div class="flex flex-col">
         <span class="text-sm font-medium dark:text-white">
-          {{ name }}
+          {{ certificationName }}
         </span>
-        <p class="text-xs font-medium dark:text-white/40">{{ username }}</p>
+        <p class="text-xs font-medium dark:text-white/40">
+          @{{ institutionName }}
+        </p>
+        <p class="text-xs dark:text-white/40">{{ certificationDate }}</p>
       </div>
     </div>
-    <blockquote class="mt-2 text-sm">{{ body }}</blockquote>
+    <blockquote class="mt-2 text-sm">{{ certificationDescription }}</blockquote>
   </figure>
 </template>
 
 <script lang="ts" setup>
 defineProps({
-  img: { type: String, required: true },
-  name: { type: String, required: true },
-  username: { type: String, required: true },
-  body: { type: String, required: true },
+  institutionLogo: { type: String, required: true },
+  certificationName: { type: String, required: true },
+  institutionName: { type: String, required: true },
+  certificationDate: { type: String, required: true },
+  certificationDescription: { type: String, required: false },
 });
 </script>

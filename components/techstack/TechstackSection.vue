@@ -4,7 +4,7 @@
       class="flex flex-col w-full max-w-screen-xl mx-auto mt-16 mb-16 sm:mt-32"
     >
       <h2
-        class="text-3xl font-semibold leading-none tracking-tight md:text-3xl lg:text-3xl"
+        class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
       >
         01. Work with
       </h2>
