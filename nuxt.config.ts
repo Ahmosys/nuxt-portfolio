@@ -6,8 +6,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
-    'shadcn-nuxt',
     '@nuxt/image',
+    'shadcn-nuxt',
+    'nuxt3-lenis'
   ],
   app: {
     head: {

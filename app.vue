@@ -1,6 +1,8 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <Lenis root>
+      <NuxtPage />
+    </Lenis>
   </NuxtLayout>
 </template>
 

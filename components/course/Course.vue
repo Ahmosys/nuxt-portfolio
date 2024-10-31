@@ -8,7 +8,7 @@
       02. Certifications
     </h2>
     <p class="mb-10 text-muted-foreground">
-      I have obtained several certifications.
+      Certifications I have been able to obtain.
     </p>
 
     <div
