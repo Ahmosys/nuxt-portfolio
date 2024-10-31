@@ -56,8 +56,8 @@
 </template>
 
 <script lang="ts" setup>
-import ReviewCard from "@/components/techstack/ReviewCard.vue";
-import Marquee from "@/components/techstack/Marquee.vue";
+import ReviewCard from "~/components/course/CourseCard.vue";
+import Marquee from "~/components/course/CourseCardList.vue";
 
 const certifications = [
   {
