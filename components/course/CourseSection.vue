@@ -1,63 +1,60 @@
 <template>
-  <section id="course">
-    <div
-      class="flex flex-col w-full max-w-screen-xl mx-auto mt-16 mb-16 sm:mt-32"
+  <Container>
+    <h2
+      class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
     >
-      <h2
-        class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
-      >
-        02. Certifications
-      </h2>
-      <p class="mb-10 text-muted-foreground">
-        Certifications I have been able to obtain.
-      </p>
+      02. Certifications
+    </h2>
+    <p class="mb-10 text-muted-foreground">
+      Certifications I have been able to obtain.
+    </p>
 
+    <div
+      class="relative flex flex-col items-center justify-center w-full overflow-hidden"
+    >
+      <!-- First Marquee -->
+      <Marquee pauseOnHover class="[--duration:40s]">
+        <ReviewCard
+          v-for="certification in firstRow"
+          :key="certification.certificationName"
+          :institutionLogo="certification.institutionLogo"
+          :certificationName="certification.certificationName"
+          :institutionName="certification.institutionName"
+          :certificationDate="certification.certificationDate"
+          :certificationDescription="certification.certificationDescription"
+        />
+      </Marquee>
+
+      <!-- Second Marquee (reverse) -->
+      <Marquee reverse pauseOnHover class="[--duration:40s]">
+        <ReviewCard
+          v-for="certification in secondRow"
+          :key="certification.certificationName"
+          :institutionLogo="certification.institutionLogo"
+          :certificationName="certification.certificationName"
+          :institutionName="certification.institutionName"
+          :certificationDate="certification.certificationDate"
+          :certificationDescription="certification.certificationDescription"
+        />
+      </Marquee>
+
+      <!-- Left Gradient -->
       <div
-        class="relative flex flex-col items-center justify-center w-full overflow-hidden"
-      >
-        <!-- First Marquee -->
-        <Marquee pauseOnHover class="[--duration:40s]">
-          <ReviewCard
-            v-for="certification in firstRow"
-            :key="certification.certificationName"
-            :institutionLogo="certification.institutionLogo"
-            :certificationName="certification.certificationName"
-            :institutionName="certification.institutionName"
-            :certificationDate="certification.certificationDate"
-            :certificationDescription="certification.certificationDescription"
-          />
-        </Marquee>
+        class="absolute inset-y-0 left-0 w-1/3 pointer-events-none bg-gradient-to-r from-white dark:from-background"
+      ></div>
 
-        <!-- Second Marquee (reverse) -->
-        <Marquee reverse pauseOnHover class="[--duration:40s]">
-          <ReviewCard
-            v-for="certification in secondRow"
-            :key="certification.certificationName"
-            :institutionLogo="certification.institutionLogo"
-            :certificationName="certification.certificationName"
-            :institutionName="certification.institutionName"
-            :certificationDate="certification.certificationDate"
-            :certificationDescription="certification.certificationDescription"
-          />
-        </Marquee>
-
-        <!-- Left Gradient -->
-        <div
-          class="absolute inset-y-0 left-0 w-1/3 pointer-events-none bg-gradient-to-r from-white dark:from-background"
-        ></div>
-
-        <!-- Right Gradient -->
-        <div
-          class="absolute inset-y-0 right-0 w-1/3 pointer-events-none bg-gradient-to-l from-white dark:from-background"
-        ></div>
-      </div>
+      <!-- Right Gradient -->
+      <div
+        class="absolute inset-y-0 right-0 w-1/3 pointer-events-none bg-gradient-to-l from-white dark:from-background"
+      ></div>
     </div>
-  </section>
+  </Container>
 </template>
 
 <script lang="ts" setup>
-import ReviewCard from "~/components/course/CourseCard.vue";
-import Marquee from "~/components/course/CourseCardList.vue";
+import ReviewCard from "@/components/course/CourseCard.vue";
+import Marquee from "@/components/course/CourseCardList.vue";
+import Container from "@/components/common/Container.vue";
 
 const certifications = [
   {
@@ -237,7 +234,6 @@ const certifications = [
   },
 ];
 
-// Split certifications into two rows
 const firstRow = ref(certifications.slice(0, certifications.length / 2));
 const secondRow = ref(certifications.slice(certifications.length / 2));
 </script>
