@@ -20,7 +20,9 @@
         <p class="text-xs dark:text-white/40">{{ certificationDate }}</p>
       </div>
     </div>
-    <blockquote class="mt-2 text-sm">{{ certificationDescription }}</blockquote>
+    <blockquote class="mt-2 text-sm">
+      {{ certificationDescription }}
+    </blockquote>
   </figure>
 </template>
 

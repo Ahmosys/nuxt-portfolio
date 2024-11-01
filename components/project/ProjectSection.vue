@@ -5,9 +5,7 @@
     >
       03. Projects
     </h2>
-    <p class="mb-10 text-muted-foreground">
-      A deep dive into a recent project.
-    </p>
+    <p class="mb-10 text-muted-foreground">Recent projects I want to share.</p>
     <div
       class="relative flex flex-col items-center justify-center w-full overflow-hidden h-[500px]"
     ></div>

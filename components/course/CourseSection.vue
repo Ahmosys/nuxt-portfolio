@@ -13,7 +13,7 @@
       class="relative flex flex-col items-center justify-center w-full overflow-hidden"
     >
       <!-- First Marquee -->
-      <Marquee pauseOnHover class="[--duration:40s]">
+      <Marquee pauseOnHover class="[--duration:50s]">
         <ReviewCard
           v-for="certification in firstRow"
           :key="certification.certificationName"
@@ -26,7 +26,7 @@
       </Marquee>
 
       <!-- Second Marquee (reverse) -->
-      <Marquee reverse pauseOnHover class="[--duration:40s]">
+      <Marquee reverse pauseOnHover class="[--duration:50s]">
         <ReviewCard
           v-for="certification in secondRow"
           :key="certification.certificationName"
