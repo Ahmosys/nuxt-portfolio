@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <CommonContainerWrapper>
     <h2
       class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
     >
@@ -12,11 +12,9 @@
       <TechstackCard />
       <TechstackOrbit />
     </div>
-  </Container>
+  </CommonContainerWrapper>
 </template>
 
-<script lang="ts" setup>
-import Container from "@/components/common/Container.vue";
-</script>
+<script lang="ts" setup></script>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <CommonContainerWrapper>
     <h2
       class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
     >
@@ -9,9 +9,7 @@
     <div
       class="relative flex flex-col items-center justify-center w-full overflow-hidden h-[500px]"
     ></div>
-  </Container>
+  </CommonContainerWrapper>
 </template>
 
-<script lang="ts" setup>
-import Container from "@/components/common/Container.vue";
-</script>
+<script lang="ts" setup></script>

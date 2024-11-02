@@ -3,7 +3,7 @@
     <h3 class="text-base">Languages</h3>
     <div class="flex flex-wrap gap-2">
       <TechstackIcon
-        v-for="(language, index) in languages"
+        v-for="(language, index) in languagesDevIcons"
         :key="index"
         :iconName="language.iconName"
         :tooltipText="language.tooltipText"
@@ -13,7 +13,7 @@
     <h3 class="text-base">Frameworks</h3>
     <div class="flex flex-wrap gap-2">
       <TechstackIcon
-        v-for="(framework, index) in frameworks"
+        v-for="(framework, index) in frameworksDevIcons"
         :key="index"
         :iconName="framework.iconName"
         :tooltipText="framework.tooltipText"
@@ -23,7 +23,7 @@
     <h3 class="text-base">Tools</h3>
     <div class="flex flex-wrap gap-2">
       <TechstackIcon
-        v-for="(tool, index) in tools"
+        v-for="(tool, index) in toolsDevIcons"
         :key="index"
         :iconName="tool.iconName"
         :tooltipText="tool.tooltipText"
@@ -55,6 +55,30 @@ const tools = [
   { iconName: "devicon-plain:githubactions", tooltipText: "GitHub Actions" },
   { iconName: "mdi:github", tooltipText: "GitHub" },
   { iconName: "mdi:gitlab", tooltipText: "GitLab" },
+];
+
+const languagesDevIcons = [
+  { iconName: "skill-icons:python-dark", tooltipText: "Python" },
+  { iconName: "skill-icons:javascript", tooltipText: "JavaScript" },
+  { iconName: "skill-icons:typescript", tooltipText: "TypeScript" },
+  { iconName: "skill-icons:cs", tooltipText: "CSharp" },
+  { iconName: "skill-icons:php-dark", tooltipText: "PHP" },
+];
+
+const frameworksDevIcons = [
+  { iconName: "skill-icons:vuejs-dark", tooltipText: "Vue.js" },
+  { iconName: "skill-icons:nuxtjs-dark", tooltipText: "Nuxt" },
+  { iconName: "skill-icons:symfony-dark", tooltipText: "Symfony" },
+  { iconName: "skill-icons:dotnet", tooltipText: ".NET Core" },
+  { iconName: "skill-icons:tailwindcss-dark", tooltipText: "Tailwind CSS" },
+];
+
+const toolsDevIcons = [
+  { iconName: "skill-icons:docker", tooltipText: "Docker" },
+  { iconName: "skill-icons:bash-dark", tooltipText: "Bash" },
+  { iconName: "skill-icons:githubactions-dark", tooltipText: "GitHub Actions" },
+  { iconName: "skill-icons:github-dark", tooltipText: "GitHub" },
+  { iconName: "skill-icons:gitlab-dark", tooltipText: "GitLab" },
 ];
 </script>
 

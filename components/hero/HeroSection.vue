@@ -20,7 +20,7 @@ import {
   PATTERN_BACKGROUND_VARIANT,
   PATTERN_BACKGROUND_MASK,
 } from "@/components/ui/pattern-background";
-import Container from "@/components/common/Container.vue";
+import Container from "~/components/common/ContainerWrapper.vue";
 </script>
 
 <style></style>

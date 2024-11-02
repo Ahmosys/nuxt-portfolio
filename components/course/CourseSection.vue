@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <CommonContainerWrapper>
     <h2
       class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
     >
@@ -9,47 +9,50 @@
       Certifications I have been able to obtain.
     </p>
 
-    <div
-      class="relative flex flex-col items-center justify-center w-full overflow-hidden"
-    >
-      <Marquee pauseOnHover class="[--duration:50s]">
-        <ReviewCard
-          v-for="certification in firstRow"
-          :key="certification.certificationName"
-          :institutionLogo="certification.institutionLogo"
-          :certificationName="certification.certificationName"
-          :institutionName="certification.institutionName"
-          :certificationDate="certification.certificationDate"
-          :certificationDescription="certification.certificationDescription"
-          :certificationLink="certification.certificationLink"
-        />
-      </Marquee>
-      <Marquee reverse pauseOnHover class="[--duration:50s]">
-        <ReviewCard
-          v-for="certification in secondRow"
-          :key="certification.certificationName"
-          :institutionLogo="certification.institutionLogo"
-          :certificationName="certification.certificationName"
-          :institutionName="certification.institutionName"
-          :certificationDate="certification.certificationDate"
-          :certificationDescription="certification.certificationDescription"
-          :certificationLink="certification.certificationLink"
-        />
-      </Marquee>
-      <div
-        class="absolute inset-y-0 left-0 w-1/3 pointer-events-none bg-gradient-to-r from-white dark:from-background"
-      ></div>
-      <div
-        class="absolute inset-y-0 right-0 w-1/3 pointer-events-none bg-gradient-to-l from-white dark:from-background"
-      ></div>
-    </div>
-  </Container>
+    <StunningSkewWrapper>
+      <template #content>
+        <div
+          class="relative flex flex-col items-center justify-center w-full overflow-hidden"
+        >
+          <Marquee pauseOnHover class="[--duration:50s]">
+            <ReviewCard
+              v-for="certification in firstRow"
+              :key="certification.certificationName"
+              :institutionLogo="certification.institutionLogo"
+              :certificationName="certification.certificationName"
+              :institutionName="certification.institutionName"
+              :certificationDate="certification.certificationDate"
+              :certificationDescription="certification.certificationDescription"
+              :certificationLink="certification.certificationLink"
+            />
+          </Marquee>
+          <Marquee reverse pauseOnHover class="[--duration:50s]">
+            <ReviewCard
+              v-for="certification in secondRow"
+              :key="certification.certificationName"
+              :institutionLogo="certification.institutionLogo"
+              :certificationName="certification.certificationName"
+              :institutionName="certification.institutionName"
+              :certificationDate="certification.certificationDate"
+              :certificationDescription="certification.certificationDescription"
+              :certificationLink="certification.certificationLink"
+            />
+          </Marquee>
+          <div
+            class="absolute inset-y-0 left-0 w-1/3 pointer-events-none bg-gradient-to-r from-white dark:from-background"
+          ></div>
+          <div
+            class="absolute inset-y-0 right-0 w-1/3 pointer-events-none bg-gradient-to-l from-white dark:from-background"
+          ></div>
+        </div>
+      </template>
+    </StunningSkewWrapper>
+  </CommonContainerWrapper>
 </template>
 
 <script lang="ts" setup>
 import ReviewCard from "@/components/course/CourseCard.vue";
 import Marquee from "@/components/course/CourseCardList.vue";
-import Container from "@/components/common/Container.vue";
 
 const certifications = [
   {
