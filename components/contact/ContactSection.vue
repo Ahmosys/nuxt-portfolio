@@ -1,5 +1,5 @@
 <template>
-  <CommonContainerWrapper>
+  <CommonContainerWrapper class="sm:mt-16">
     <div
       class="relative flex flex-col items-center justify-center px-40 pt-8 pb-40 overflow-hidden size-full md:pb-60 gradient-mask-b-60"
     >
@@ -64,7 +64,10 @@
           <FormItem>
             <FormLabel>Message</FormLabel>
             <FormControl>
-              <Input placeholder="Your Message" v-bind="componentField"></Input>
+              <Textarea
+                placeholder="Your Message"
+                v-bind="componentField"
+              ></Textarea>
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -72,7 +75,9 @@
 
         <!-- Submit Button -->
         <div class="flex justify-end">
-          <Button type="submit" class="w-full">Send message</Button>
+          <Button variant="secondary" type="submit" class="w-full"
+            >Send message</Button
+          >
         </div>
       </form>
     </div>
@@ -81,6 +86,7 @@
 
 <script setup lang="ts">
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import {
   FormControl,
   FormField,
@@ -88,6 +94,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/toast/use-toast";
 import { toTypedSchema } from "@vee-validate/zod";

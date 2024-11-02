@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     'shadcn-nuxt',
-    'nuxt3-lenis'
+    'nuxt3-lenis',
+    '@vueuse/sound/nuxt'
   ],
   app: {
     head: {
@@ -25,4 +26,9 @@ export default defineNuxtConfig({
     preference: 'dark',
     fallback: 'light'
   },
+  sound: {
+    sounds: {
+      scan: true
+    }
+  }
 })

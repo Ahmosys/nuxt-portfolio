@@ -15,6 +15,7 @@
       <!-- Looping through 'links' array to create navigation links -->
       <NuxtLink
         v-for="(link, index) in links"
+        @click="play"
         :key="index"
         :to="link.to"
         :class="[
@@ -35,6 +36,10 @@
 </template>
 
 <script lang="ts" setup>
+import { useSound } from "@vueuse/sound";
+
+const { play } = useSound("sounds/minecraft-click.mp3", { volume: 0.2 });
+
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
