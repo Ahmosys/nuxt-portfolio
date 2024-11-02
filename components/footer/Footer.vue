@@ -1,13 +1,13 @@
 <template>
-  <footer class="border-t w-full py-6">
+  <footer class="w-full py-6 border-t">
     <div
-      class="mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
+      class="flex flex-col items-center justify-between gap-6 mx-auto md:flex-row"
     >
       <nav class="flex flex-wrap gap-4 text-sm text-muted-foreground">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.to"
-          class="hover:text-foreground transition-colors"
+          class="transition-colors hover:text-foreground"
           :to="link.to"
         >
           {{ link.text }}
@@ -17,7 +17,7 @@
         <a
           v-for="social in socialLinks"
           :key="social.href"
-          class="hover:text-foreground transition-colors flex items-center gap-1 group"
+          class="flex items-center gap-1 transition-colors hover:text-foreground group"
           :href="social.href"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,6 @@
 </template>
 
 <script lang="ts" setup>
-// Définir les liens de navigation
 const navLinks = [
   { text: "Home", to: "/" },
   { text: "About", to: "/about" },
@@ -47,7 +46,6 @@ const navLinks = [
   { text: "Contact", to: "/contact" },
 ];
 
-// Définir les liens sociaux
 const socialLinks = [
   { text: "Github", href: "https://github.com/ahmosys" },
   { text: "LinkedIn", href: "https://www.linkedin.com/in/ahmosys" },

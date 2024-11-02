@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="certificationLink"
-    class="relative p-4 overflow-hidden border cursor-pointer w-72 rounded-xl bg-card text-card-foreground"
+    class="relative p-4 overflow-hidden border cursor-pointer w-72 rounded-xl bg-card text-card-foreground transition-all hover:-translate-y-1 hover:translate-x-1 hover:scale-[1.025] hover:shadow-xl"
     target="_blank"
     rel="noopener"
     external

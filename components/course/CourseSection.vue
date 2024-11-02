@@ -14,8 +14,8 @@
         <div
           class="relative flex flex-col items-center justify-center w-full overflow-hidden"
         >
-          <Marquee pauseOnHover class="[--duration:50s]">
-            <ReviewCard
+          <CourseCardList pauseOnHover class="[--duration:50s]">
+            <CourseCard
               v-for="certification in firstRow"
               :key="certification.certificationName"
               :institutionLogo="certification.institutionLogo"
@@ -25,9 +25,9 @@
               :certificationDescription="certification.certificationDescription"
               :certificationLink="certification.certificationLink"
             />
-          </Marquee>
-          <Marquee reverse pauseOnHover class="[--duration:50s]">
-            <ReviewCard
+          </CourseCardList>
+          <CourseCardList reverse pauseOnHover class="[--duration:50s]">
+            <CourseCard
               v-for="certification in secondRow"
               :key="certification.certificationName"
               :institutionLogo="certification.institutionLogo"
@@ -37,13 +37,7 @@
               :certificationDescription="certification.certificationDescription"
               :certificationLink="certification.certificationLink"
             />
-          </Marquee>
-          <div
-            class="absolute inset-y-0 left-0 w-1/3 pointer-events-none bg-gradient-to-r from-white dark:from-background"
-          ></div>
-          <div
-            class="absolute inset-y-0 right-0 w-1/3 pointer-events-none bg-gradient-to-l from-white dark:from-background"
-          ></div>
+          </CourseCardList>
         </div>
       </template>
     </StunningSkewWrapper>
@@ -51,9 +45,6 @@
 </template>
 
 <script lang="ts" setup>
-import ReviewCard from "@/components/course/CourseCard.vue";
-import Marquee from "@/components/course/CourseCardList.vue";
-
 const certifications = [
   {
     certificationName: "CCNA Cybersecurity Operations",
