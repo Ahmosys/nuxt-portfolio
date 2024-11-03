@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full py-6 border-t">
+  <div class="w-full py-6 border-t">
     <div
       class="flex flex-col items-center justify-between gap-6 mx-auto md:flex-row"
     >
@@ -34,7 +34,7 @@
       © 2024 ahmosys - Built with
       <Icon name="lucide:heart" class="text-red-600"></Icon> and a keyboard.
     </p>
-  </footer>
+  </div>
 </template>
 
 <script lang="ts" setup>
