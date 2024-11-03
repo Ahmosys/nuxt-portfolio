@@ -9,12 +9,22 @@
       Some of the technologies I work with.
     </p>
     <div class="flex items-center">
-      <TechstackCard />
+      <div class="flex flex-col w-1/2 gap-3">
+        <TechstackIconList title="Languages" :items="languagesDevIcons" />
+        <TechstackIconList title="Frameworks" :items="frameworksDevIcons" />
+        <TechstackIconList title="Tools" :items="toolsDevIcons" />
+      </div>
       <TechstackOrbit />
     </div>
   </CommonContainerWrapper>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import {
+  languagesDevIcons,
+  frameworksDevIcons,
+  toolsDevIcons,
+} from "@/utils/techstackData";
+</script>
 
 <style scoped></style>
