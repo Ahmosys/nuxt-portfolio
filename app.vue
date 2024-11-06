@@ -1,9 +1,11 @@
 <template>
-  <NuxtLayout>
-    <Lenis root>
-      <NuxtPage />
-    </Lenis>
-  </NuxtLayout>
+  <div class="font-inter">
+    <NuxtLayout>
+      <Lenis root>
+        <NuxtPage />
+      </Lenis>
+    </NuxtLayout>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -26,8 +28,8 @@ useHead({
   link: [
     {
       rel: "icon",
-      type: "image/svg",
-      href: "/favicon.svg",
+      type: "image/jpg",
+      href: "/images/hero-pfps.jpg",
     },
   ],
 });

@@ -2,7 +2,7 @@
   <img
     src="/images/hero-pfps.jpg"
     alt="Profile Picture"
-    class="rounded-full h-[13rem] w-[13rem] object-cover my-5 border-2 transition-transform ease-in-out duration-500 hover:scale-110"
+    class="rounded-full h-[13rem] w-[13rem] object-cover my-5 border-2"
   />
 </template>
 

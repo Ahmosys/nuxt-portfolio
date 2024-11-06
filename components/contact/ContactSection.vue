@@ -75,8 +75,8 @@
 
         <!-- Submit Button -->
         <div class="flex justify-end">
-          <Button variant="secondary" type="submit" class="w-full"
-            >Send message</Button
+          <InspiraRainbowButton type="submit" class="w-full"
+            >Send message</InspiraRainbowButton
           >
         </div>
       </form>

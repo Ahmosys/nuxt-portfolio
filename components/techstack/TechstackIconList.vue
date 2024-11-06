@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-base">{{ title }}</h3>
+    <h3 class="text-base mb-2">{{ title }}</h3>
     <div class="flex flex-wrap gap-2">
       <TechstackIcon
         v-for="(item, index) in items"
