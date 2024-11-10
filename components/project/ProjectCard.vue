@@ -40,8 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import { Badge } from "@/components/ui/Badge";
-
 const props = defineProps<{
   title: string;
   description: string;
