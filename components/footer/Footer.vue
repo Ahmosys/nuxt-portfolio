@@ -39,11 +39,11 @@
 
 <script lang="ts" setup>
 const navLinks = [
-  { text: "Home", to: "/" },
-  { text: "About", to: "/about" },
-  { text: "Projects", to: "/projects" },
-  { text: "Blog", to: "/blog" },
-  { text: "Contact", to: "/contact" },
+  { text: "home", to: "/" },
+  { text: "about", to: "/about" },
+  { text: "projects", to: "/projects" },
+  { text: "blog", to: "/blog" },
+  { text: "contact", to: "/contact" },
 ];
 
 const socialLinks = [

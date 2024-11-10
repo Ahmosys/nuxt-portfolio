@@ -3,7 +3,7 @@
     <h2
       class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
     >
-      02. Certifications
+      certifications
     </h2>
     <p class="mb-10 text-muted-foreground">
       Certifications I have been able to obtain.

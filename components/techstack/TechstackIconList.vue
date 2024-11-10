@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h3 class="text-base mb-2">{{ title }}</h3>
+    <h3 class="mb-2 text-base">{{ props.title }}</h3>
     <div class="flex flex-wrap gap-2">
       <TechstackIcon
-        v-for="(item, index) in items"
+        v-for="(item, index) in props.items"
         :key="index"
         :iconName="item.iconName"
         :tooltipText="item.tooltipText"
@@ -13,13 +13,11 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps } from "vue";
-
-const props = defineProps({
-  title: String,
-  items: {
-    type: Array,
-    default: () => [],
-  },
-});
+const props = defineProps<{
+  title: string;
+  items: Array<{
+    iconName: string;
+    tooltipText: string;
+  }>;
+}>();
 </script>

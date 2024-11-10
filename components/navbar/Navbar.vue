@@ -41,11 +41,11 @@ import { useSound } from "@vueuse/sound";
 const { play } = useSound("sounds/minecraft-click.mp3", { volume: 0.2 });
 
 const links = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/projects", label: "Projects" },
-  { to: "/blog", label: "Blog" },
-  { to: "/contact", label: "Contact" },
+  { to: "/", label: "home" },
+  { to: "/about", label: "about" },
+  { to: "/projects", label: "projects" },
+  { to: "/blog", label: "blog" },
+  { to: "/contact", label: "contact" },
 ];
 </script>
 
