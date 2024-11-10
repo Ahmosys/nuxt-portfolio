@@ -1,5 +1,5 @@
 <template>
-  <Button variant="ghost" size="icon" @click="toggleTheme">
+  <Button variant="ghost" size="icon" @click="toggleThemeAndPlaySound">
     <Icon
       name="lucide:moon-star"
       class="h-[1.2rem] w-[1.2rem] duration-500 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
@@ -13,10 +13,14 @@
 </template>
 
 <script lang="ts" setup>
-const colorMode = useColorMode();
+import { useSound } from "@vueuse/sound";
 
-const toggleTheme = () => {
+const colorMode = useColorMode();
+const { play } = useSound("sounds/lamp-switch.mp3", { volume: 0.2 });
+
+const toggleThemeAndPlaySound = () => {
   colorMode.preference = colorMode.preference === "light" ? "dark" : "light";
+  play();
 };
 </script>
 

@@ -15,13 +15,11 @@
         alt="Institution Logo"
       />
       <div class="flex flex-col">
-        <span class="text-sm font-medium dark:text-white">
+        <span class="text-sm font-medium">
           {{ certificationName }}
         </span>
-        <p class="text-xs font-medium dark:text-white/40">
-          @{{ institutionName }}
-        </p>
-        <p class="text-xs dark:text-white/40">{{ certificationDate }}</p>
+        <p class="text-xs font-medium">@{{ institutionName }}</p>
+        <p class="text-xs text-muted-foreground">{{ certificationDate }}</p>
       </div>
     </div>
     <blockquote class="mt-2 text-sm">

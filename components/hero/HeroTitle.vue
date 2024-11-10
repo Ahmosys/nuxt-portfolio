@@ -7,7 +7,7 @@
     >
     a software engineer creating modern web apps.
   </h1>
-  <p class="max-w-prose text-muted-foreground sm:text-lg my-5">
+  <p class="my-5 max-w-prose text-muted-foreground sm:text-lg">
     {{ currentSubtitleSentence }}
   </p>
 </template>
@@ -26,6 +26,7 @@ const subtitleSentences = [
   "A software engineer based in France. As a lifelong learner, I'm always seeking new challenges to enhance my skills and deliver exceptional results.",
   "A software engineer based in France. I believe in the power of collaboration and value the insights that diverse perspectives bring to every project.",
   "A software engineer based in France. Whether it's a small startup or a large enterprise, I'm dedicated to making technology accessible for all.",
+  "At 22, I’m a software engineer based in France, fueled by curiosity and a passion for learning. I constantly explore new technologies to enhance and perfect my work.",
 ];
 
 const currentSubtitleSentence =
