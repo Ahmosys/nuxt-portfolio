@@ -1,7 +1,7 @@
 <template>
   <CommonContainerWrapper>
     <h2
-      class="text-3xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
+      class="text-2xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"
     >
       certifications
     </h2>

@@ -11,18 +11,42 @@
       <h3 class="mt-5 text-lg font-medium leading-none tracking-tight">
         {{ props.title }}
       </h3>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <Badge
+          v-for="(tech, index) in props.technos"
+          :key="index"
+          variant="secondary"
+        >
+          {{ tech }}
+        </Badge>
+      </div>
       <p class="mt-2 mb-3 text-sm text-muted-foreground">
         {{ props.description }}
       </p>
+
+      <div class="flex items-center justify-between mt-auto">
+        <a href="#" class="text-sm font-medium text-foreground">
+          View Project
+        </a>
+        <div class="flex items-center gap-2">
+          <a href="#" class="text-sm font-medium text-foreground">
+            <span class="mr-1">Source</span>
+          </a>
+          <a href="#" class="text-sm font-medium text-foreground">Live</a>
+        </div>
+      </div>
     </div>
   </StunningSpotlightCard>
 </template>
 
 <script setup lang="ts">
+import { Badge } from "@/components/ui/Badge";
+
 const props = defineProps<{
   title: string;
   description: string;
   imageSrc: string;
   imageAlt?: string;
+  technos: string[];
 }>();
 </script>
