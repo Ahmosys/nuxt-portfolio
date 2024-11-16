@@ -3,7 +3,7 @@ import gradient from "tailwind-gradient-mask-image";
 import { setupInspiraUI } from "@inspira-ui/plugins";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",

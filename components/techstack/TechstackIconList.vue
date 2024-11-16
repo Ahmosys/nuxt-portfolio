@@ -7,7 +7,6 @@
         :key="index"
         :iconName="item.iconName"
         :tooltipText="item.tooltipText"
-        class="w-full md:w-auto"
       />
     </div>
   </div>
