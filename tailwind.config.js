@@ -88,5 +88,5 @@ export default {
       },
     },
   },
-  plugins: [animate, gradient, setupInspiraUI],
+  plugins: [animate, gradient, setupInspiraUI, require("tailwindcss-motion")],
 };

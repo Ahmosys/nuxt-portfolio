@@ -1,13 +1,13 @@
 <template>
   <div
-    class="inline-flex items-center rounded-lg border px-3 py-1 text-sm font-medium mb-4"
+    class="inline-flex items-center px-3 py-1 mb-4 text-sm font-medium border rounded-lg"
   >
-    <span class="relative flex h-2 w-2 mr-2"
+    <span class="relative flex w-2 h-2 mr-2"
       ><span
-        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-700 opacity-75"
+        class="absolute inline-flex w-full h-full bg-green-700 rounded-full opacity-75 animate-ping"
       ></span
       ><span
-        class="relative inline-flex h-2 w-2 rounded-full bg-green-700"
+        class="relative inline-flex w-2 h-2 bg-green-700 rounded-full"
       ></span></span
     ><span class="sm:inline">Currently Online</span>
   </div>
