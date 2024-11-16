@@ -25,14 +25,14 @@
       </p>
 
       <div class="flex items-center justify-between mt-auto">
-        <a href="#" class="text-sm font-medium text-foreground">
+        <a href="#" class="z-10 text-sm font-medium text-foreground">
           View Project
         </a>
         <div class="flex items-center gap-2">
-          <a href="#" class="text-sm font-medium text-foreground">
+          <a href="#" class="z-10 text-sm font-medium text-foreground">
             <span class="mr-1">Source</span>
           </a>
-          <a href="#" class="text-sm font-medium text-foreground">Live</a>
+          <a href="#" class="z-10 text-sm font-medium text-foreground">Live</a>
         </div>
       </div>
     </div>

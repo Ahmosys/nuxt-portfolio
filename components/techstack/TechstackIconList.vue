@@ -1,12 +1,13 @@
 <template>
   <div>
     <h3 class="mb-2 text-base">{{ props.title }}</h3>
-    <div class="flex flex-wrap gap-2">
+    <div class="flex flex-col gap-2 md:flex-wrap md:flex-row">
       <TechstackIcon
         v-for="(item, index) in props.items"
         :key="index"
         :iconName="item.iconName"
         :tooltipText="item.tooltipText"
+        class="w-full md:w-auto"
       />
     </div>
   </div>

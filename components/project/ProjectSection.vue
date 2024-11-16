@@ -1,7 +1,6 @@
 <template>
   <CommonContainerWrapper>
     <div class="flex items-center justify-between mb-10">
-      <!-- Conteneur pour le titre et le bouton "View More" -->
       <div class="flex flex-col">
         <h2
           class="text-2xl font-semibold leading-none tracking-tight md:text-2xl lg:text-2xl"

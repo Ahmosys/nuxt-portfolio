@@ -1,5 +1,5 @@
-const animate = require("tailwindcss-animate");
-const gradient = require("tailwind-gradient-mask-image");
+import animate from "tailwindcss-animate";
+import gradient from "tailwind-gradient-mask-image";
 import { setupInspiraUI } from "@inspira-ui/plugins";
 
 /** @type {import('tailwindcss').Config} */

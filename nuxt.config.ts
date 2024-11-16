@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     'nuxt3-lenis',
     '@vueuse/sound/nuxt',
+    '@vueuse/motion/nuxt'
   ],
   app: {
     head: {

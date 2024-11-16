@@ -8,13 +8,13 @@
     <p class="mb-10 text-muted-foreground">
       Some of the technologies I work with.
     </p>
-    <div class="flex items-center">
-      <div class="flex flex-col w-1/2 gap-3">
+    <div class="flex flex-col items-center md:flex-row">
+      <div class="flex flex-col w-full gap-3 md:w-1/2">
         <TechstackIconList title="Languages" :items="languagesDevIcons" />
         <TechstackIconList title="Frameworks" :items="frameworksDevIcons" />
         <TechstackIconList title="Tools" :items="toolsDevIcons" />
       </div>
-      <TechstackOrbit />
+      <TechstackOrbit class="hidden md:block" />
     </div>
   </CommonContainerWrapper>
 </template>
