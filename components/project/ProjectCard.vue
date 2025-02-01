@@ -29,10 +29,17 @@
           View Project
         </a>
         <div class="flex items-center gap-2">
-          <a href="#" class="z-10 text-sm font-medium text-foreground">
+          <a
+            :href="props.liveUrl"
+            class="z-10 text-sm font-medium text-foreground"
+          >
             <span class="mr-1">Source</span>
           </a>
-          <a href="#" class="z-10 text-sm font-medium text-foreground">Live</a>
+          <a
+            :href="props.sourceUrl"
+            class="z-10 text-sm font-medium text-foreground"
+            >Live</a
+          >
         </div>
       </div>
     </div>
@@ -46,5 +53,7 @@ const props = defineProps<{
   imageSrc: string;
   imageAlt?: string;
   technos: string[];
+  liveUrl: string;
+  sourceUrl: string;
 }>();
 </script>

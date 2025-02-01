@@ -19,6 +19,8 @@
         image-src="https://github.com/Ahmosys/daily-scrum-picker/raw/main/docs/images/readme-presentation.png"
         image-alt="Daily Scrum Picker"
         :technos="['Vue.js', 'Vuetify', 'TypeScript', 'Vite']"
+        live-url="https://daily-scrum-picker.vercel.app/"
+        source-url="https://github.com/Ahmosys/daily-scrum-picker"
       />
       <ProjectCard
         title="Nordpapers"
@@ -26,6 +28,8 @@
         image-src="https://github.com/Ahmosys/nordpapers/raw/main/docs/images/readme-presentation.png"
         image-alt="Nordpapers"
         :technos="['Vue.js', 'Vuetify', 'TypeScript']"
+        live-url="https://nordpapers.vercel.app/"
+        source-url="https://github.com/Ahmosys/nordpapers"
       />
     </div>
   </CommonContainerWrapper>
