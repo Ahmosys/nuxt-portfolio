@@ -5,7 +5,7 @@
       class="text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500"
       >Ahmosys</span
     >
-    a software engineer creating modern web apps.
+    a software engineer creating modern web apps
   </h1>
   <p class="my-5 max-w-prose text-muted-foreground sm:text-lg">
     {{ currentSubtitleSentence }}
