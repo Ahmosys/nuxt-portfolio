@@ -20,7 +20,7 @@
           {{ tech }}
         </Badge>
       </div>
-      <p class="mt-2 mb-3 text-sm text-muted-foreground">
+      <p class="mt-3 mb-3 text-sm text-muted-foreground">
         {{ props.description }}
       </p>
 
